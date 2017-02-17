@@ -13,7 +13,7 @@
 
 package com.is2300.jedi.edi.fa997;
 
-import com.is2300.jedi.edi.global.exceptions.InvalidDocTypeException;
+import com.is2300.jedi.edi.*;
 import com.is2300.jedi.edi.fa997.segments.DataElementNote;
 import com.is2300.jedi.edi.fa997.segments.DataSegmentNote;
 import com.is2300.jedi.edi.fa997.segments.FGResponseHdr;
@@ -24,8 +24,8 @@ import com.is2300.jedi.edi.fa997.supl.EDIDocTypeValidator;
 import com.is2300.jedi.edi.global.enums.DESyntaxErrorCode;
 import com.is2300.jedi.edi.global.enums.SegmentSyntaxErrorCode;
 import com.is2300.jedi.edi.global.enums.TSSyntaxErrorCode;
+import com.is2300.jedi.edi.global.exceptions.InvalidDocTypeException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
