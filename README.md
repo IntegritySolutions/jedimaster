@@ -23,12 +23,12 @@ Our starting pay for employee's is, unfortunately, a little low here in the star
 # Requirements
 For full-time employees, we would *prefer* that you would relocate to our area (Central Illinois, USA), but this is not required at the start. Interns and/or Contrators would not need to relocate and can work from wherever they are located.
 
-Having said that, not relocating to Central Illinois is not a deal breaker, especially at this point in time. Our needs are to great right now to make relocation a deal breaker. At this point, we really just want to build the team and get our project moving forward.
+Having said that, not relocating to Central Illinois is not a deal breaker, especially at this point in time. Our needs are too great right now to make relocation a deal breaker. At this point, we really just want to build the team and get our project moving forward.
 
 If you are hired as an employee, once the two-year start-up period is complete and you want to stay on as a Project Manager or Team Leader, relocation will become a key issue. No sense in even worrying about that now, however, so let's move on.
 
 # Contact Us
-If you are interested in an internship, contract position or employment with Integrity Solutions, send an email to SeanCarrick (PekinSOFT@outlook.com). The email will start the ball rolling on bringing you on-board. If you would rather just like to help out on this project because it seems interesting or challenging to you, send the email anyway. 
+If you are interested in an internship, contract position or employment with Integrity Solutions, send an email to @SeanCarrick (PekinSOFT@outlook.com). The email will start the ball rolling on bringing you on-board. If you would rather just like to help out on this project because it seems interesting or challenging to you, send the email anyway. 
 
 We look forward to hearing from you soon!
 
