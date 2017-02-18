@@ -13,7 +13,6 @@
 
 package com.is2300.jedi.edi.fa997;
 
-import com.is2300.jedi.edi.*;
 import com.is2300.jedi.edi.fa997.segments.DataElementNote;
 import com.is2300.jedi.edi.fa997.segments.DataSegmentNote;
 import com.is2300.jedi.edi.fa997.segments.FGResponseHdr;
@@ -877,8 +876,48 @@ public class FunctionalAcknowledgment {
         // Lastly, add our local TSResponseTrailer to the list.
         this.ak5.add(resp);
     }
-    
-    // TODO: Getters for AK5 segment...
+    /**
+     * Retrieves the Transaction Set Acknowledgment Code for the Response Trailer
+     * object indicated by the index value provided.
+     * 
+     * @param idx the index of the List item to return
+     * @return <tt>java.lang.String</tt>
+     */
+    public String getAcknowledgmentCode(int idx) {
+        // Return the Transaction Set Acknowledgment Code from the List element
+        //+ the user requested.
+        return this.ak5.get(idx).getTSetAcknowledgmentCode();
+    }
+    /**
+     * Retrieves the <tt>Transaction Set Error Code</tt>s in <tt>String</tt> 
+     * form from the List as an array.
+     * 
+     * @param idx the List element for which to retrieve the errors as Strings
+     * @return an Array of java.lang.String objects
+     */
+    public String[] getTSetErrorAsString(int idx) {
+       return this.ak5.get(idx).errorToString();
+    }
+    /**
+     * Retrieves the <tt>Transaction Set Error Code</tt>s in <tt>Integer</tt>
+     * form from the List as an array.
+     * 
+     * @param idx the List element for which to retrieve the errors as Integers
+     * @return an Array of java.lang.Integer objects
+     */
+    public Integer[] getTSetErrorAsInteger(int idx) {
+        return this.ak5.get(idx).errorToInteger();
+    }
+    /**
+     * Retrieves an <tt>Iterator</tt> on the <tt>Transaction Set Error Code</tt>
+     * object identified by the supplied index into the List.
+     * 
+     * @param idx the List element for which to retrieve the Iterator
+     * @return a java.util.Iterator into the List of Error Codes
+     */
+    public Iterator getTSetErrorCodesIterator(int idx) {
+        return this.ak5.get(idx).getErrorIterator();
+    }
     //</editor-fold>
     
     //<editor-fold desc="   AK9 Segment   ">
