@@ -1,7 +1,6 @@
-/* {EntityIdentifierCodes.java}
- * This enumeration provides access to all of the possible entity identifier
- * codes that may be used in an EDI transmission document. This enumeration will
- * need to be updated as new entity identifier codes are discovered.
+/* {FunctionalIdentifierCodes.java}
+ * This enumeration provides access to all of the valid Functional Group
+ * Identifier Codes that can be used in an EDI transmission.
  *
  * Copyright (c) 2017 Integrity Solutions
  *
@@ -21,44 +20,50 @@
 package com.is2300.jedi.edi.global.enums;
 
 /**
- *
+ * Provides all of the valid Functional Group Identifier codes for use within an
+ * EDI transmission's GS segment.
+ * 
  * @author Sean Carrick
  * &lt;<a href="mailto:PekinSOFT@outlook.com">PekinSOFT@outlook.com</a>&gt;
+ * @version 0.5.0
+ * @since 0.5.0
  */
-public enum EntityIdentifierCodes {
-    BUYING_PARTY("BY"),
-    PAYEE("PE"),
-    RECEIVER("RE"),
-    SELLING_PARTY("SE");
+public enum FunctionalIdentifierCodes {
+    INVOICE("IN");
     
+    /**
+     * Private field to hold the Functional Identifier Code for this value.
+     */
     private String value;
     
-    private EntityIdentifierCodes(String val) {
+    /**
+     * Private constructor to establish the Functional Identifier Code.
+     * 
+     * @param val code to set
+     */
+    private FunctionalIdentifierCodes(String val) {
         this.value = val;
     }
     
-    
+    /**
+     * Function to get the full name of the Functional Identifier Code for the
+     * current value.
+     * 
+     * @return java.lang.String Functional Identifier full name
+     */
     @Override
     public String toString() {
-        String retVal = null;
+        String r = null;
         
-        switch (this.value) {
-            case "BY":
-                retVal = "Buying Party";
-                break;
-            case "PE":
-                retVal = "Payee";
-                break;
-            case "RE":
-                retVal = "Party to receive commercial invoice remittance";
-            case "SE":
-                retVal = "Selling Party";
+        switch ( this.value ) {
+            case "IN":
+                r = "Invoice";
                 break;
             default:
-                retVal = "Undefined Entity Identifier Code";
+                r = "Undefined";
                 break;
         }
         
-        return retVal;
+        return r;
     }
 }

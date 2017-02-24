@@ -53,6 +53,7 @@ public enum UsageCodes {
      * 
      * @return java.lang.String long form of the code.
      */
+    @Override
     public String toString() {
         // Return the appropriate String value based on the setting of value.
         if ( this.value == 'P' ) {
