@@ -1,3 +1,6 @@
+# This Repository is Now Defunct#
+Check the new repository, jEDIMaster1, for current project files.
+
 # jEDI Master
 jEDI Master is the EDI foundational base upon which our ERMS will be built.
 
